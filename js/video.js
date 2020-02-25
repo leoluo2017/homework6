@@ -35,12 +35,20 @@ function increaseSpeed() {
 // 	console.log("Current location is "+ );
 // } 
 
-// function mute() { 
-  	
-//   		console.log("Unmuted");
-  	
-//       	console.log("Muted");
-// }
+function mute() { 
+	console.log(video.muted)
+	if(video.muted==true){
+		video.muted=false;
+		document.querySelector("#mute").innerHTML="unmuted"
+		console.log("changing to Unmuted");
+	}
+	else{
+		video.muted=true;
+		document.querySelector("#mute").innerHTML="muted"
+		console.log("changing to muted");
+	}
+
+}
 
 function changeVolume() {
 	let slider = document.querySelector("#volumeSlider")
