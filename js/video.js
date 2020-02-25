@@ -21,12 +21,12 @@ function pauseVid() {
 } 
 
 function decreaseSpeed() { 
-	video.playbackRate -=.1
+	video.playbackRate -=.2
   	console.log("Speed is "+ video.playbackRate);
 } 
 
 function increaseSpeed() {
-	video.playbackRate +=.1
+	video.playbackRate +=.25
 	console.log("Speed is "+ video.playbackRate);
 } 
 
@@ -59,12 +59,12 @@ function changeVolume() {
 }
        
 
-// function gray() { 
+function gray() { 
+	document.getElementById("myVideo").style.filter = "grayscale(100%)";
+	console.log("In grayscale")
+}
 
-// 	console.log("In grayscale")
-// }
-
-// function color() {
-
-// 	console.log("In color") 
-// }
+function color() {
+	document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	console.log("In color") 
+}
