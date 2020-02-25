@@ -30,10 +30,14 @@ function increaseSpeed() {
 	console.log("Speed is "+ video.playbackRate);
 } 
 
-// function skipAhead() {
-
-// 	console.log("Current location is "+ );
-// } 
+function skipAhead() {
+	document.getElementById("myVideo").currentTime += 60
+	if(document.getElementById("myVideo").currentTime>596.45833){
+		document.getElementById("myVideo").currentTime=0
+		video.playbackRate=1
+	}
+	console.log("Current location is "+ document.getElementById("myVideo").currentTime);
+} 
 
 function mute() { 
 	console.log(video.muted)
