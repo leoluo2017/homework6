@@ -64,11 +64,13 @@ function changeVolume() {
        
 
 function gray() { 
-	document.getElementById("myVideo").style.filter = "grayscale(100%)";
+	//this also works -  document.getElementById("myVideo").style.filter = "grayscale(100%)";
+	document.getElementById("myVideo").classList.add("grayscale");
 	console.log("In grayscale")
 }
 
 function color() {
-	document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	// this also works document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	document.getElementById("myVideo").classList.remove("grayscale");
 	console.log("In color") 
 }
