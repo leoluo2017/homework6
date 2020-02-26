@@ -70,7 +70,7 @@ function gray() {
 }
 
 function color() {
-	// this also works document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	// this also works - document.getElementById("myVideo").style.filter = "grayscale(0%)";
 	document.getElementById("myVideo").classList.remove("grayscale");
 	console.log("In color") 
 }
