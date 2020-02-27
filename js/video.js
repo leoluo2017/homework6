@@ -74,3 +74,6 @@ function color() {
 	document.getElementById("myVideo").classList.remove("grayscale");
 	console.log("In color") 
 }
+
+
+// Thank you! Have a great break :) 
